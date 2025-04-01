@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//////////////////////// operators /////////////////////////////
+
+// 1: uniary operators
+//      can be performed on single variable
+//      increment (pre or post) 
+//      pre increment ++x
+//      post increment x++
+
+//      decrement (pre or post)
+//      pre decrement --y
+//      post decrement y--
+
+// post prefex (increment)
+var x = 10
+var y = x++
+console.log(x)
+console.log(y)
+
+// pre prefix (increment)
+var x = 10
+var y = ++x
+console.log(x)
+console.log(y)
+
+// post prefex (decrement)
+var x = 10
+var y = x--
+console.log(x)
+console.log(y)
+
+// pre prefix (decrement)
+var x = 10
+var y = --x
+console.log(x)
+console.log(y)
+
+
+// 2: Binray operators
+//    arithmatic, realtional/comparision, bitwise, assignment, logical
+//    arithmatic: + - * / % ** ++ --
+
+// var a = +prompt("enter a value")
+// var b = +prompt("enter b value")  
+var a = 5
+var b = 3
+console.log("a+b=",a+b)
+console.log("a-b=",a-b)
+console.log("a*b=",a*b)
+console.log("a/b=",a/b)
+console.log("a%b=",a%b)
+console.log("a**b=",a**b)
+
+//    relational: < > >= <= === ==
+
+var a = 5
+var b = 6
+
+
+if (a>b){
+    console.log("a > b")
+}else  if (a<b){
+    console.log("a < b")
+} 
+
+if (a<=b){
+    console.log("a <= b")
+} else if (a>=b){
+    console.log("a>=b")
+}
+
+a = 55
+b ='55'
+if (a == b) // compares the value regardless of their dtype
+{
+    console.log(" a == b ")
+}
+if ( a === b ) //compares both the value including their dtypes 
+                // returns false cause a is int and b is str
+{
+    console.log("a === b") 
+}
+
+//    bitwise: & | ~ ^ << >> >>>
+//    assignment: += -= /= %= **=
+
+var d=5
+var c=5
+console.log("+= ", c+=1)
+console.log("-=", c-=2)
+console.log("/=",d/=3)
+console.log("%=",d%=2)
+
+// Logical: & | ~ 
+
+var j = 4
+var k = 5
+c=5
+d=5
+
+if (j<k && c==d)// Both Conditions satisfy
+{
+    console.log("And operator")
+}
+if (j>k || c==d)// A single true statemetn will work
+{
+    console.log("or operator")
+}
+
+// 3: ternarary operators
+
+    </script>
+</body>
+</html>
