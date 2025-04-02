@@ -1,7 +1,7 @@
 let x= 10
 let y=8
 // console.log(x&y)
-////////////////// ternaray operators /////////////
+/////////////////////////////////// ternaray operators /////////////////////////
 
 //  var result = (x<y)?"X is greater":"x is small";
 //  console.log(result);
@@ -13,7 +13,7 @@ let y=8
 
 
 
-//////////// object ///////////
+////////////////////////////////////// object //////////////////////////////////
 
 const car = 
 {
@@ -26,7 +26,7 @@ const car =
 console.log(car);
 
 
-///////////// Arrays ///////////
+/////////////////////////////////////// Arrays /////////////////////////////////
 // denoted by []
 
 let arr=[1,2,3,4,5,6];
@@ -53,12 +53,83 @@ let arr3 = arr.slice(1,5) // creates new array from index value 2 to 5-1 from m 
 arr.sort()
 arr.reverse() // combine both to get array in descending order
 
-/////////// fucnctions //////////
+//////////////////////////////////// fucnctions ////////////////////////////////
+// function is a block/collections of statements
+// function _name_(arguments){logic}; is used to write functions
+// using function we can reuse the code
+
+// have two steps...
+// 1: function declaration
+// 2: function calling
 
 function myfun (arg1 , arg2=2){
     document.writeln(arg1+arg2);
+}; // function declaration
+
+// myfun(6,1);// function calling
+// 7206823978
+
+function myfu1 (){
+    let arg1 =+prompt("Enter first value");
+    let arg2 =+prompt("Enter second value");
+    document.writeln(arg1+arg2+"<br>");
+}; 
+// myfu1();
+
+// function sum (arg1 , arg2=2){
+//     document.writeln(arg1+arg2);
+// };
+// function sub (arg1 , arg2=2){
+//     document.writeln(arg1-arg2);
+// };
+// function mul (arg1 , arg2=2){
+//     document.writeln(arg1*arg2);
+// };
+// function dev (arg1 , arg2=2){
+//     document.writeln(arg1/arg2);
+// };
+
+function greet(name){
+    document.writeln(
+        "Good morning :" + name +"<br>"
+    );
 };
 
-myfun(6,1);
+// greet("Aditya");
 
 
+/////////////////////////// control statement /////////////////////////////////
+
+let a =+prompt("enter first value.");
+let b =+prompt("enter second value.");
+let c =+prompt("enter third value.");
+let d =+prompt("enter forth value.");
+
+
+if (a>b && a>c && a>d){
+    document.writeln("The maximun number is: "+a );
+} else if (b>c && b>d){
+    document.writeln("The maximun number is: "+b );
+} else if (c>d){
+    document.writeln("The maximun number is: "+c );
+}else if (d>b || a==b==c==d){
+    document.writeln("The maximun number is: "+d );
+}else{
+    document.writeln("Invalid input");
+}
+
+
+///// Conditional statements:
+//if 
+//else
+//else if
+
+// looping statements
+// for()
+// while()
+// do while()
+
+// jumping statements
+// switch()
+// break
+// continue 
