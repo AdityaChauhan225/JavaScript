@@ -13,13 +13,21 @@ let y=8
 
 
 
-///////// object /////////
+//////////// object ///////////
 
-const student = 
+const car = 
 {
-    Name:"Aditya",
-    age:34,
-    class:"SAP"
+    Name:"Creta",
+    model:2024,
+    color:"Black",
+    price:1900000
 };
 
-console.log(student);
+console.log(car);
+
+
+///////////// Arrays ///////////
+
+const arr=[1,2,3,4,5,6];
+arr[0]=8
+console.log(arr[0]);
