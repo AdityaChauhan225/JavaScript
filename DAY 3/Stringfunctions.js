@@ -29,4 +29,3 @@ document.writeln("9. endsWith() :- "+str.endsWith("World!")+"<br>");
 document.writeln("10. includes() :- "+str.includes("Hello")+"<br>");
 document.writeln("11. concat() :- "+str.concat(" How are you?")+"<br>");
 document.writeln("12. substring() :- "+str.substring(0,5)+"<br>");
-
