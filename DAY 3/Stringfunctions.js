@@ -12,7 +12,7 @@
 // 10: includes()--> returns true if the string contains the specified string
 // 11: concat()--> concatenates two strings
 // 12: substring()--> returns the substring of the string from the specified index to the specified index
-
+// 13: replace() --> find and replace the existing value with the entered (takes 2 arguments)
 
 
 
