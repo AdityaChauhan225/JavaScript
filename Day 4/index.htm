@@ -6,6 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="day4.js"></script>
+    <div id="and">
+        <h1>Hello world</h1>
+        <p class="headder">Goodmorning All</p>
+        <h2 id="head">Hello Parul!</h2>
+        <h3 class="headder">Line 1</h3>
+        <h3 class="headder">Line 2</h3>
+        <h3 class="headder">Line 3</h3>
+    </div>
+    <script>
+    // document.getElementById("greet").innerHTML="<span style='color:blue'> Good evening All</span>";
+        let id=document.getElementById("head");
+        id.innerHTML="Hello India!";
+        id.style.color="tomato";
+        let tag = document.getElementsByTagName("h2");
+        for(let key in tag){
+            tag[key].style.color="green";
+        }
+        let className = document.getElementsByClassName("headder");
+        for(let key in className){
+            className[key].style.color="red";
+        }
+       
+    </script>
+    
 </body>
 </html>
