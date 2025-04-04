@@ -10,3 +10,11 @@
 // 3. document.getElementsByClassName("classname") - get element by class name
 // 4. document.querySelector("selector") - get element by selector
 // 5. document.querySlectorAll("selector") - get all elements by selector
+
+
+
+
+
+
+/////////////////// QUERY SELECTOR ///////////////////
+
