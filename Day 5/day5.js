@@ -23,12 +23,19 @@
 
 
 let date = new Date();
-document.writeln(date.getHours()+":"+date.getMinutes()+":"+date.getSeconds()+":"+date.getMilliseconds()+"<br>");
-document.writeln(`${date.getDate()} : ${date.getMonth()} : ${date.getFullYear()}`);
+function time(){
+let current=`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+document.getElementById("time").innerHTML=current;
+}
+setInterval(time,10000)
+    time();
+
+
+// document.writeln(`${date.getDate()} : ${date.getMonth()} : ${date.getFullYear()}`);
 
 // ALERT
-alert("hello");
+// alert("hello");
 
-// CONFIRM
-confirm("do you agree");
+// // CONFIRM
+// confirm("do you agree");
 

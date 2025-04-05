@@ -7,12 +7,12 @@
     
 </head> 
 <body>
-    
+    <div id="time"></div>
     <!-- <form action="" id="form" >
         <label for="email">Email:</label>
         <input type="text" id="mail">
         <br><br>
-        <label for="password">Password:</label>
+        <label for="password">Passwordx:</label>
         <input type="password" id="pass">
         <br><br>
         <label for="phno">Mobile number:</label>
@@ -21,7 +21,18 @@
         <input type="submit" value="submit">
     </form> -->
 
-    <script src="day5.js">
+    <script >
+
+        function digitalClock(){
+            let date = new Date();
+            let hour = date.getHours();
+            let min = date.getMinutes();
+            let sec = date.getSeconds();
+            let ampm = (hour>12)?"PM":"AM"
+            document.getElementById("time").innerHTML=`${hour}:${min}:${sec} ${ampm}`;
+        }
+        setInterval(digitalClock,100);
+            digitalClock();
 
     </script>
 </body>
